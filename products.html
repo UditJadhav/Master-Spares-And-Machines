@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MASTER SPARES AND MACHINES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="products">
+        ${[...Array(50).keys()].map(i => `
+        <div class="product">
+            <h2>Product ${i + 1}</h2>
+            <img src="https://via.placeholder.com/300" alt="Product ${i + 1} Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <p class="price">₹${(i + 1) * 1000}.00</p>
+            <button>Add to Cart</button>
+        </div>`).join('')}
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 MASTER SPARES AND MACHINES. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
